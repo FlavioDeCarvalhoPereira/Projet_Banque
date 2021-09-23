@@ -1,7 +1,7 @@
 #include "compteEpargne.h"
 
 CompteEpargne::CompteEpargne(const float _tauxInterets):
-   CompteBancaire(0),
+   CompteBancaire(100),
    tauxInterets(_tauxInterets)
 {
 
@@ -16,5 +16,5 @@ CompteEpargne::CompteEpargne(const float _solde, const float _tauxInterets):
 
 void CompteEpargne::CalculerInterets()
 {
-solde = solde+((solde*tauxInterets)/100);
+solde = solde+(solde*0.05);
 }

@@ -17,7 +17,7 @@ void CompteBancaire::Deposer(const float _montant)
             solde = solde +_montant;
         }
     else {
-            cout << "Impossible d'ajouter des choses negatives";
+            cout << "Impossible d'ajouter des choses négatives";
         }
 }
 
